@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		256AC3DA0F4B6AC300CF3369 /* MtGoxTraderAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* MtGoxTraderAppDelegate.m */; };
+		77A84FA21361360F0063FCD0 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A84F911361360F0063FCD0 /* ASINetworkQueue.m */; };
+		77A84FA31361360F0063FCD0 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A84F931361360F0063FCD0 /* ASIInputStream.m */; };
+		77A84FA41361360F0063FCD0 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A84F971361360F0063FCD0 /* ASIHTTPRequest.m */; };
+		77A84FA51361360F0063FCD0 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A84F991361360F0063FCD0 /* ASIFormDataRequest.m */; };
+		77A84FA61361360F0063FCD0 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A84F9B1361360F0063FCD0 /* ASIDownloadCache.m */; };
+		77A84FA71361360F0063FCD0 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A84F9D1361360F0063FCD0 /* ASIDataDecompressor.m */; };
+		77A84FA81361360F0063FCD0 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A84F9F1361360F0063FCD0 /* ASIDataCompressor.m */; };
+		77A84FB01361368B0063FCD0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77A84FAF1361368B0063FCD0 /* SystemConfiguration.framework */; };
+		77A84FB21361369C0063FCD0 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77A84FB11361369C0063FCD0 /* CoreServices.framework */; };
+		77A84FBE136136FF0063FCD0 /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 77A84FBD136136FF0063FCD0 /* libz.1.2.3.dylib */; };
+		77A84FE4136141070063FCD0 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A84FD1136141070063FCD0 /* SBJsonWriter.m */; };
+		77A84FE5136141070063FCD0 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A84FD3136141070063FCD0 /* SBJsonTokeniser.m */; };
+		77A84FE6136141070063FCD0 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A84FD5136141070063FCD0 /* SBJsonStreamWriterState.m */; };
+		77A84FE7136141070063FCD0 /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A84FD7136141070063FCD0 /* SBJsonStreamWriter.m */; };
+		77A84FE8136141070063FCD0 /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A84FD9136141070063FCD0 /* SBJsonStreamParserState.m */; };
+		77A84FE9136141070063FCD0 /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A84FDB136141070063FCD0 /* SBJsonStreamParserAdapter.m */; };
+		77A84FEA136141070063FCD0 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A84FDD136141070063FCD0 /* SBJsonStreamParser.m */; };
+		77A84FEB136141070063FCD0 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A84FDF136141070063FCD0 /* SBJsonParser.m */; };
+		77A84FEC136141070063FCD0 /* NSObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A84FE1136141070063FCD0 /* NSObject+JSON.m */; };
+		77A8500B136332E50063FCD0 /* ChartsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A8500A136332E50063FCD0 /* ChartsView.m */; };
+		77A8500F136333050063FCD0 /* ChartsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77A8500E136333050063FCD0 /* ChartsView.xib */; };
+		77A8505313633D630063FCD0 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A8505213633D630063FCD0 /* MainViewController.m */; };
+		77A85063136350570063FCD0 /* BuyOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A85062136350570063FCD0 /* BuyOrder.m */; };
+		77A85072136353770063FCD0 /* SellOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A85071136353770063FCD0 /* SellOrder.m */; };
+		77A8508613635C310063FCD0 /* Trade.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A8508513635C310063FCD0 /* Trade.m */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		256AC3D80F4B6AC300CF3369 /* MtGoxTraderAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MtGoxTraderAppDelegate.h; sourceTree = "<group>"; };
+		256AC3D90F4B6AC300CF3369 /* MtGoxTraderAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MtGoxTraderAppDelegate.m; sourceTree = "<group>"; };
+		256AC3F00F4B6AF500CF3369 /* MtGoxTrader_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MtGoxTrader_Prefix.pch; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		77A84F901361360F0063FCD0 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIProgressDelegate.h; path = "asi-http-request/Classes/ASIProgressDelegate.h"; sourceTree = "<group>"; };
+		77A84F911361360F0063FCD0 /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASINetworkQueue.m; path = "asi-http-request/Classes/ASINetworkQueue.m"; sourceTree = "<group>"; };
+		77A84F921361360F0063FCD0 /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASINetworkQueue.h; path = "asi-http-request/Classes/ASINetworkQueue.h"; sourceTree = "<group>"; };
+		77A84F931361360F0063FCD0 /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIInputStream.m; path = "asi-http-request/Classes/ASIInputStream.m"; sourceTree = "<group>"; };
+		77A84F941361360F0063FCD0 /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIInputStream.h; path = "asi-http-request/Classes/ASIInputStream.h"; sourceTree = "<group>"; };
+		77A84F951361360F0063FCD0 /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequestDelegate.h; path = "asi-http-request/Classes/ASIHTTPRequestDelegate.h"; sourceTree = "<group>"; };
+		77A84F961361360F0063FCD0 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequestConfig.h; path = "asi-http-request/Classes/ASIHTTPRequestConfig.h"; sourceTree = "<group>"; };
+		77A84F971361360F0063FCD0 /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIHTTPRequest.m; path = "asi-http-request/Classes/ASIHTTPRequest.m"; sourceTree = "<group>"; };
+		77A84F981361360F0063FCD0 /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIHTTPRequest.h; path = "asi-http-request/Classes/ASIHTTPRequest.h"; sourceTree = "<group>"; };
+		77A84F991361360F0063FCD0 /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIFormDataRequest.m; path = "asi-http-request/Classes/ASIFormDataRequest.m"; sourceTree = "<group>"; };
+		77A84F9A1361360F0063FCD0 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIFormDataRequest.h; path = "asi-http-request/Classes/ASIFormDataRequest.h"; sourceTree = "<group>"; };
+		77A84F9B1361360F0063FCD0 /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIDownloadCache.m; path = "asi-http-request/Classes/ASIDownloadCache.m"; sourceTree = "<group>"; };
+		77A84F9C1361360F0063FCD0 /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIDownloadCache.h; path = "asi-http-request/Classes/ASIDownloadCache.h"; sourceTree = "<group>"; };
+		77A84F9D1361360F0063FCD0 /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIDataDecompressor.m; path = "asi-http-request/Classes/ASIDataDecompressor.m"; sourceTree = "<group>"; };
+		77A84F9E1361360F0063FCD0 /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIDataDecompressor.h; path = "asi-http-request/Classes/ASIDataDecompressor.h"; sourceTree = "<group>"; };
+		77A84F9F1361360F0063FCD0 /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASIDataCompressor.m; path = "asi-http-request/Classes/ASIDataCompressor.m"; sourceTree = "<group>"; };
+		77A84FA01361360F0063FCD0 /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIDataCompressor.h; path = "asi-http-request/Classes/ASIDataCompressor.h"; sourceTree = "<group>"; };
+		77A84FA11361360F0063FCD0 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASICacheDelegate.h; path = "asi-http-request/Classes/ASICacheDelegate.h"; sourceTree = "<group>"; };
+		77A84FAF1361368B0063FCD0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		77A84FB11361369C0063FCD0 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		77A84FBD136136FF0063FCD0 /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
+		77A84FD1136141070063FCD0 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonWriter.m; path = "json-framework/Classes/SBJsonWriter.m"; sourceTree = "<group>"; };
+		77A84FD2136141070063FCD0 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonWriter.h; path = "json-framework/Classes/SBJsonWriter.h"; sourceTree = "<group>"; };
+		77A84FD3136141070063FCD0 /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonTokeniser.m; path = "json-framework/Classes/SBJsonTokeniser.m"; sourceTree = "<group>"; };
+		77A84FD4136141070063FCD0 /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonTokeniser.h; path = "json-framework/Classes/SBJsonTokeniser.h"; sourceTree = "<group>"; };
+		77A84FD5136141070063FCD0 /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamWriterState.m; path = "json-framework/Classes/SBJsonStreamWriterState.m"; sourceTree = "<group>"; };
+		77A84FD6136141070063FCD0 /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamWriterState.h; path = "json-framework/Classes/SBJsonStreamWriterState.h"; sourceTree = "<group>"; };
+		77A84FD7136141070063FCD0 /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamWriter.m; path = "json-framework/Classes/SBJsonStreamWriter.m"; sourceTree = "<group>"; };
+		77A84FD8136141070063FCD0 /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamWriter.h; path = "json-framework/Classes/SBJsonStreamWriter.h"; sourceTree = "<group>"; };
+		77A84FD9136141070063FCD0 /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParserState.m; path = "json-framework/Classes/SBJsonStreamParserState.m"; sourceTree = "<group>"; };
+		77A84FDA136141070063FCD0 /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParserState.h; path = "json-framework/Classes/SBJsonStreamParserState.h"; sourceTree = "<group>"; };
+		77A84FDB136141070063FCD0 /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParserAdapter.m; path = "json-framework/Classes/SBJsonStreamParserAdapter.m"; sourceTree = "<group>"; };
+		77A84FDC136141070063FCD0 /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParserAdapter.h; path = "json-framework/Classes/SBJsonStreamParserAdapter.h"; sourceTree = "<group>"; };
+		77A84FDD136141070063FCD0 /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonStreamParser.m; path = "json-framework/Classes/SBJsonStreamParser.m"; sourceTree = "<group>"; };
+		77A84FDE136141070063FCD0 /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonStreamParser.h; path = "json-framework/Classes/SBJsonStreamParser.h"; sourceTree = "<group>"; };
+		77A84FDF136141070063FCD0 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonParser.m; path = "json-framework/Classes/SBJsonParser.m"; sourceTree = "<group>"; };
+		77A84FE0136141070063FCD0 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonParser.h; path = "json-framework/Classes/SBJsonParser.h"; sourceTree = "<group>"; };
+		77A84FE1136141070063FCD0 /* NSObject+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+JSON.m"; path = "json-framework/Classes/NSObject+JSON.m"; sourceTree = "<group>"; };
+		77A84FE2136141070063FCD0 /* NSObject+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+JSON.h"; path = "json-framework/Classes/NSObject+JSON.h"; sourceTree = "<group>"; };
+		77A84FE3136141070063FCD0 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSON.h; path = "json-framework/Classes/JSON.h"; sourceTree = "<group>"; };
+		77A84FF7136145090063FCD0 /* ServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceManager.h; sourceTree = "<group>"; };
+		77A85009136332E50063FCD0 /* ChartsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartsView.h; sourceTree = "<group>"; };
+		77A8500A136332E50063FCD0 /* ChartsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartsView.m; sourceTree = "<group>"; };
+		77A8500E136333050063FCD0 /* ChartsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChartsView.xib; sourceTree = "<group>"; };
+		77A8505113633D630063FCD0 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		77A8505213633D630063FCD0 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		77A85061136350570063FCD0 /* BuyOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyOrder.h; sourceTree = "<group>"; };
+		77A85062136350570063FCD0 /* BuyOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyOrder.m; sourceTree = "<group>"; };
+		77A85070136353770063FCD0 /* SellOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SellOrder.h; sourceTree = "<group>"; };
+		77A85071136353770063FCD0 /* SellOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SellOrder.m; sourceTree = "<group>"; };
+		77A8508413635C310063FCD0 /* Trade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trade.h; sourceTree = "<group>"; };
+		77A8508513635C310063FCD0 /* Trade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Trade.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* MtGoxTrader-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MtGoxTrader-Info.plist"; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* MtGoxTrader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MtGoxTrader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				77A84FB01361368B0063FCD0 /* SystemConfiguration.framework in Frameworks */,
+				77A84FB21361369C0063FCD0 /* CoreServices.framework in Frameworks */,
+				77A84FBE136136FF0063FCD0 /* libz.1.2.3.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				77A84FED1361410C0063FCD0 /* SBJson */,
+				77A84FEF136144640063FCD0 /* Model */,
+				77A84FF0136144760063FCD0 /* Controller */,
+				77A84FEE1361445B0063FCD0 /* View */,
+				77A84FA9136136130063FCD0 /* ASI */,
+				256AC3D80F4B6AC300CF3369 /* MtGoxTraderAppDelegate.h */,
+				256AC3D90F4B6AC300CF3369 /* MtGoxTraderAppDelegate.m */,
+				77A84FF7136145090063FCD0 /* ServiceManager.h */,
+				77A8505113633D630063FCD0 /* MainViewController.h */,
+				77A8505213633D630063FCD0 /* MainViewController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* MtGoxTrader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* MtGoxTrader */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				77A84FAF1361368B0063FCD0 /* SystemConfiguration.framework */,
+				77A84FB11361369C0063FCD0 /* CoreServices.framework */,
+				77A84FBD136136FF0063FCD0 /* libz.1.2.3.dylib */,
+			);
+			name = MtGoxTrader;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				256AC3F00F4B6AF500CF3369 /* MtGoxTrader_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107310486CEB800E47090 /* MtGoxTrader-Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		77A84FA9136136130063FCD0 /* ASI */ = {
+			isa = PBXGroup;
+			children = (
+				77A84F901361360F0063FCD0 /* ASIProgressDelegate.h */,
+				77A84F911361360F0063FCD0 /* ASINetworkQueue.m */,
+				77A84F921361360F0063FCD0 /* ASINetworkQueue.h */,
+				77A84F931361360F0063FCD0 /* ASIInputStream.m */,
+				77A84F941361360F0063FCD0 /* ASIInputStream.h */,
+				77A84F951361360F0063FCD0 /* ASIHTTPRequestDelegate.h */,
+				77A84F961361360F0063FCD0 /* ASIHTTPRequestConfig.h */,
+				77A84F971361360F0063FCD0 /* ASIHTTPRequest.m */,
+				77A84F981361360F0063FCD0 /* ASIHTTPRequest.h */,
+				77A84F991361360F0063FCD0 /* ASIFormDataRequest.m */,
+				77A84F9A1361360F0063FCD0 /* ASIFormDataRequest.h */,
+				77A84F9B1361360F0063FCD0 /* ASIDownloadCache.m */,
+				77A84F9C1361360F0063FCD0 /* ASIDownloadCache.h */,
+				77A84F9D1361360F0063FCD0 /* ASIDataDecompressor.m */,
+				77A84F9E1361360F0063FCD0 /* ASIDataDecompressor.h */,
+				77A84F9F1361360F0063FCD0 /* ASIDataCompressor.m */,
+				77A84FA01361360F0063FCD0 /* ASIDataCompressor.h */,
+				77A84FA11361360F0063FCD0 /* ASICacheDelegate.h */,
+			);
+			name = ASI;
+			sourceTree = "<group>";
+		};
+		77A84FED1361410C0063FCD0 /* SBJson */ = {
+			isa = PBXGroup;
+			children = (
+				77A84FD1136141070063FCD0 /* SBJsonWriter.m */,
+				77A84FD2136141070063FCD0 /* SBJsonWriter.h */,
+				77A84FD3136141070063FCD0 /* SBJsonTokeniser.m */,
+				77A84FD4136141070063FCD0 /* SBJsonTokeniser.h */,
+				77A84FD5136141070063FCD0 /* SBJsonStreamWriterState.m */,
+				77A84FD6136141070063FCD0 /* SBJsonStreamWriterState.h */,
+				77A84FD7136141070063FCD0 /* SBJsonStreamWriter.m */,
+				77A84FD8136141070063FCD0 /* SBJsonStreamWriter.h */,
+				77A84FD9136141070063FCD0 /* SBJsonStreamParserState.m */,
+				77A84FDA136141070063FCD0 /* SBJsonStreamParserState.h */,
+				77A84FDB136141070063FCD0 /* SBJsonStreamParserAdapter.m */,
+				77A84FDC136141070063FCD0 /* SBJsonStreamParserAdapter.h */,
+				77A84FDD136141070063FCD0 /* SBJsonStreamParser.m */,
+				77A84FDE136141070063FCD0 /* SBJsonStreamParser.h */,
+				77A84FDF136141070063FCD0 /* SBJsonParser.m */,
+				77A84FE0136141070063FCD0 /* SBJsonParser.h */,
+				77A84FE1136141070063FCD0 /* NSObject+JSON.m */,
+				77A84FE2136141070063FCD0 /* NSObject+JSON.h */,
+				77A84FE3136141070063FCD0 /* JSON.h */,
+			);
+			name = SBJson;
+			sourceTree = "<group>";
+		};
+		77A84FEE1361445B0063FCD0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				77A85009136332E50063FCD0 /* ChartsView.h */,
+				77A8500A136332E50063FCD0 /* ChartsView.m */,
+				77A8500E136333050063FCD0 /* ChartsView.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		77A84FEF136144640063FCD0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				77A8509013635E950063FCD0 /* User */,
+				77A8507E13635C200063FCD0 /* Recent Trades */,
+				77A8507313635BBB0063FCD0 /* Market Depth */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		77A84FF0136144760063FCD0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		77A8507313635BBB0063FCD0 /* Market Depth */ = {
+			isa = PBXGroup;
+			children = (
+				77A85070136353770063FCD0 /* SellOrder.h */,
+				77A85071136353770063FCD0 /* SellOrder.m */,
+				77A85061136350570063FCD0 /* BuyOrder.h */,
+				77A85062136350570063FCD0 /* BuyOrder.m */,
+			);
+			name = "Market Depth";
+			sourceTree = "<group>";
+		};
+		77A8507E13635C200063FCD0 /* Recent Trades */ = {
+			isa = PBXGroup;
+			children = (
+				77A8508413635C310063FCD0 /* Trade.h */,
+				77A8508513635C310063FCD0 /* Trade.m */,
+			);
+			name = "Recent Trades";
+			sourceTree = "<group>";
+		};
+		77A8509013635E950063FCD0 /* User */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* MtGoxTrader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "MtGoxTrader" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MtGoxTrader;
+			productInstallPath = "$(HOME)/Applications";
+			productName = MtGoxTrader;
+			productReference = 8D1107320486CEB800E47090 /* MtGoxTrader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MtGoxTrader" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* MtGoxTrader */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* MtGoxTrader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				77A8500F136333050063FCD0 /* ChartsView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				256AC3DA0F4B6AC300CF3369 /* MtGoxTraderAppDelegate.m in Sources */,
+				77A84FA21361360F0063FCD0 /* ASINetworkQueue.m in Sources */,
+				77A84FA31361360F0063FCD0 /* ASIInputStream.m in Sources */,
+				77A84FA41361360F0063FCD0 /* ASIHTTPRequest.m in Sources */,
+				77A84FA51361360F0063FCD0 /* ASIFormDataRequest.m in Sources */,
+				77A84FA61361360F0063FCD0 /* ASIDownloadCache.m in Sources */,
+				77A84FA71361360F0063FCD0 /* ASIDataDecompressor.m in Sources */,
+				77A84FA81361360F0063FCD0 /* ASIDataCompressor.m in Sources */,
+				77A84FE4136141070063FCD0 /* SBJsonWriter.m in Sources */,
+				77A84FE5136141070063FCD0 /* SBJsonTokeniser.m in Sources */,
+				77A84FE6136141070063FCD0 /* SBJsonStreamWriterState.m in Sources */,
+				77A84FE7136141070063FCD0 /* SBJsonStreamWriter.m in Sources */,
+				77A84FE8136141070063FCD0 /* SBJsonStreamParserState.m in Sources */,
+				77A84FE9136141070063FCD0 /* SBJsonStreamParserAdapter.m in Sources */,
+				77A84FEA136141070063FCD0 /* SBJsonStreamParser.m in Sources */,
+				77A84FEB136141070063FCD0 /* SBJsonParser.m in Sources */,
+				77A84FEC136141070063FCD0 /* NSObject+JSON.m in Sources */,
+				77A8500B136332E50063FCD0 /* ChartsView.m in Sources */,
+				77A8505313633D630063FCD0 /* MainViewController.m in Sources */,
+				77A85063136350570063FCD0 /* BuyOrder.m in Sources */,
+				77A85072136353770063FCD0 /* SellOrder.m in Sources */,
+				77A8508613635C310063FCD0 /* Trade.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MtGoxTrader_Prefix.pch;
+				INFOPLIST_FILE = "MtGoxTrader-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = MtGoxTrader;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MtGoxTrader_Prefix.pch;
+				INFOPLIST_FILE = "MtGoxTrader-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = MtGoxTrader;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "MtGoxTrader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MtGoxTrader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

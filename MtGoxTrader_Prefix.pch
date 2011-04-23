@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'MtGoxTrader' target in the 'MtGoxTrader' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
